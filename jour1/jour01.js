@@ -35,6 +35,9 @@ var template = `I'm 20 years old ${age}`;
 console.log(template);
 
 // Bonus
+var cat = "chata";
+var cat = cat.replace(cat.charAt(2,4),"o")
+console.log(cat);
  
 
 
