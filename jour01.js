@@ -14,6 +14,27 @@ var testLenght = "I'm very long !";
 console.log(testLenght.length);
 
 //05 - replace
-var food = "croissant is meh"
-//console.log(food.replace(mehfood));
+var food = "croissant is meh";
+food = food.replace("meh","good")
+console.log(food);
+
+//06 - up and down
+var basic = "this is cool";
+var basicUp = basic.toUpperCase();
+var basicDown = basic.toLocaleLowerCase();
+console.log(basic,basicUp,basicDown);
+
+//07 - split 
+var word = "banana";
+var letters = word.split("");
+console.log(letters);
+
+//08 - template 
+var age = "20";
+var template = `I'm 20 years old ${age}`;
+console.log(template);
+
+// Bonus
+ 
+
 
