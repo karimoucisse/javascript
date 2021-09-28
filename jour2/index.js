@@ -78,15 +78,20 @@ if(random===6){
 }
 
 // bonus II 
-var mouth ="january";
+var mouth ="february";
 switch (mouth) {
-    case "january":
+    case "january":     
+    case "february":
         console.log("winter");
         break;
     case "march":
+    case "april":
+    case "may":
         console.log("spring");
         break;
     case "june":
+    case "july":
+    case "august":
         console.log("summer");
         break;
     case "september":
@@ -95,5 +100,24 @@ switch (mouth) {
     default : 
     console.log("non");
 }
+
+// bonus III 
+var roundedNumber = 7.2;
+if((roundedNumber - 0.4)<= Math.floor(roundedNumber)){
+    console.log(Math.floor(roundedNumber));
+}else{
+    console.log(Math.ceil(roundedNumber));
+}
+
+/*var roundedNumber = 5.2;
+
+if((roundedNumber - Math.floor(roundedNumber))<4){
+    console.log(Math.floor(roundedNumber));
+}
+else{
+    console.log(Math.ceil(roundedNumber));
+}*/
+
+
 
 
