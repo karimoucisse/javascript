@@ -29,7 +29,7 @@ console.log(numbers);
 var total = 0;
 var limit = 10;
 for(var i=0; i<=limit; i++){
-    total = total += i;
+    /*total =*/ total += i;
     console.log(`i = ${total}`);
 }
 
@@ -45,11 +45,11 @@ console.log(inverse);
 // Bonus 1
 for (var i=0; i<=100;i++){
     
-    if ((i%3)===0) {
-        console.log("fizz");
+    if ((i%3)===0 && (i%5)===0)  {
+        console.log("fizzbuzz");
     }else if((i%5)===0) {
         console.log("buzz");
-    }else if ((i%3)===0 && (i%5)===0) {
+    }else if ((i%3)===0) {
         console.log("fizzbuzz");
     }else if((i%7)===0) {
         console.log("");
@@ -76,7 +76,7 @@ prenom = ["ahmedE","ahmedK","kevinA","Alin","benoit","bilal","chaïma",
 var min = 0
 var max = prenom.length -1 ;
 random = Math.floor(Math.random() * (max - min + 1) + min);
-console.log(prenom[random]);
+console.log(`the chosen one is ${prenom[random]}`);
 
 // Bonus - IV
 var table =[];
