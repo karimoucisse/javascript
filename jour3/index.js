@@ -30,15 +30,13 @@ var total = 0;
 var limit = 10;
 for(var i=0; i<=limit; i++){
     total = total += i;
-    console.log(total);
+    console.log(`i = ${total}`);
 }
 
 // 06 - reverse
 var sentence ="Hello Konexio !";
 var inverse="" ;
-for(var i=sentence.length-1;i>=0;i--){
-    //console.log(i);
-    
+for(var i=sentence.length-1;i>=0;i--){   
     console.log(sentence[i]);  
     inverse+=sentence[i];
 }
@@ -68,13 +66,23 @@ i=-1;
 while (i<limit) {
     i++
     total+=i;
-    console.log(total);
+    console.log(`i = ${total}`);
 }
 
 // Bonus - III
 prenom = ["ahmedE","ahmedK","kevinA","Alin","benoit","bilal","chaïma",
 "edouard","evan","hanaa","helene","jeremy","karimou","marco","rebecca",
 "salwa","syrine"];
+var min = 0
+var max = prenom.length -1 ;
+random = Math.floor(Math.random() * (max - min + 1) + min);
+console.log(prenom[random]);
 
-
-
+// Bonus - IV
+var table =[];
+var min = 0;
+var max = 100;
+for(; table.length < 20; table.push( Math.floor(Math.random() * (max - min + 1) + min))){
+    
+}
+console.log(table);
