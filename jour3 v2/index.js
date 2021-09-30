@@ -46,8 +46,8 @@ for( var i=0;i<=10;i++){
 }
 
 // 6 - Factorielle v1
-var resultat = 5;
-for(var i=4;i!==0;i--){
+var resultat = 7;
+for(var i=6;i!==0;i--){
    
     console.log(`${i} `);
     resultat *= i ;
@@ -86,4 +86,74 @@ for(i=100;i<1000;i++){
 console.log(`total = ${total}`);
 
 // 10 - Chanceux
+var min = 1;
+var max = 6;
+var resultatTotal=0;
+var string = "";
 
+for(i=0;i<=20;i++){
+    var resultat=Math.floor(Math.random() * (max - min + 1) + min);
+    if(resultat>=5){
+        console.log(`resultat >= à 5 => ${resultat}`);
+        resultatTotal +=resultat;
+        string += `${resultat}+`
+        
+    }
+}
+
+//console.log(`resultatTotal est egale à ${resultatTotal}`);
+console.log(`${string} = ${resultatTotal}`);
+
+// 11 - des boites
+
+/*var box1 = 12;
+var box2 = 5;
+for (var i = 12; i < 14; i++) {
+    box1 = box2;
+    console.log(box1 + box2);
+    box2 = box1 + i;
+}
+console.log(box1);
+console.log(box2);
+console.log(i);*/
+
+// 12 - d'autres boites
+/*var box1 = 12;
+for (var i = 12; i !== 0; i = i - 3) {
+    console.log(box1);
+    box1 = box1 + i;
+}
+console.log(box1);
+console.log(i);*/
+
+//
+
+// encore des boites
+/*var box1 = 0;
+var box2 = 3;
+for (var i = 0; i > -4; i--) {
+    if (i % 2 === 0) {
+        console.log("box 1 = ",box1 + i);
+        box2++;
+    } else {
+        console.log("box 2 = ",box2 + i);
+        box1--;
+    }
+}
+
+console.log(box1);
+console.log(box2);
+console.log(i);
+*/
+
+// bonus
+var nombre=153;
+var nombreString=nombre.toString()
+var total="" ;
+for(var i=0;i<nombreString.length;i++){
+    var resultat = nombreString[i]
+    for(var j=0;j<nombreString.length;j++){
+        resultat=nombreString[i]**3 ;
+    }
+    console.log(resultat);    
+}
