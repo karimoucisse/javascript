@@ -6,7 +6,7 @@ var cat = {
 }
 console.log(cat);
 console.log(cat.age);
-if(cat.isCute=true){
+if(cat.isCute){
     console.log("So cute!");
 }
 console.log("");
@@ -55,7 +55,7 @@ console.log("");
 
 function addUp (num){
     var result=0;
-    for(i=0;i<=num;i++){
+    for(var i=0;i<=num;i++){
         result+=i;
      
     }
@@ -80,11 +80,11 @@ console.log("");
 // Bonus - I
 function generatePassword(num){
     var password = [];
-    if(num>6 && num<12){
+    if(num>=6 && num<=12){
         for(i=0;i<num;i++){
             var min = 0;
-            var max = 25;
-            lettre = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p",
+            var max = 15;
+            var lettre = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p",
             "q","r","s","t","u","v","w","x","y","z"];
             
             random =Math.floor(Math.random() * (max - min + 1) + min);
@@ -103,8 +103,8 @@ function launchDice (numberOfDice){
     var max = 6;
     var total=0;
     var resultat=[];
-    for (i=0;i<numberOfDice;i++){
-        var random= random =Math.floor(Math.random() * (max - min + 1) + min);
+    for (var i=0;i<numberOfDice;i++){
+        var random= Math.floor(Math.random() * (max - min + 1) + min);
          resultat.push(random)
         total+=random;     
     }
@@ -117,7 +117,7 @@ function launchDice (numberOfDice){
 var joueur1 = launchDice(5);
 var joueur2=launchDice(5);
 if(joueur1>joueur2){
-    console.log(`joueur 1 à gagné joueur1=${joueur1} > $joueur2=${joueur2}`);
+    console.log(`joueur 1 à gagné joueur1=${joueur1} > joueur2=${joueur2}`);
 }else if(joueur2>joueur1){
     console.log(`joueur 2 à gagné joueur2=${joueur2} > joueur1=${joueur1}`);
 }else{
