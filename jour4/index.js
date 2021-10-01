@@ -99,5 +99,29 @@ generatePassword(6)
 
 //   bonus - II
 function launchDice (numberOfDice){
+    var min = 1;
+    var max = 6;
+    var total=0;
+    var resultat=[];
+    for (i=0;i<numberOfDice;i++){
+        var random= random =Math.floor(Math.random() * (max - min + 1) + min);
+         resultat.push(random)
+        total+=random;     
+    }
+    console.log(`${resultat.join("+")} = ${total} `);
+    return total
+    
+    
     
 }
+var joueur1 = launchDice(5);
+var joueur2=launchDice(5);
+if(joueur1>joueur2){
+    console.log(`joueur 1 à gagné joueur1=${joueur1} > $joueur2=${joueur2}`);
+}else if(joueur2>joueur1){
+    console.log(`joueur 2 à gagné joueur2=${joueur2} > joueur1=${joueur1}`);
+}else{
+    console.log(`il ya égalité joueur2:${joueur2} = joueur1:${joueur1}`);
+}
+
+
